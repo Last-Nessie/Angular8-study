@@ -4,8 +4,9 @@
   "description": "",
   "main": "index.js",
   "dependencies": {
-    "npm-git-install": "^0.3.0",
-    "npm": "^6.10.2"
+    "@angular/cli": "^8.2.0",
+    "npm": "^6.10.2",
+    "npm-git-install": "^0.3.0"
   },
   "devDependencies": {},
   "scripts": {
