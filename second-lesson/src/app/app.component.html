@@ -1,0 +1,30 @@
+
+
+<div>
+  <h1>{{ title }}</h1>
+</div>
+<div class="bg-card">
+  <ul>
+    <li *ngFor="let todo of todosArray">
+      <div>
+        <label class="{{ todo.status ? 'trough' : '' }}">
+          <input type="checkbox" [(ngModel)]="todo.status"> {{ todo.id }} - {{ todo.text }}
+          <button (click)="delItem(todo.text)" class="del">X</button>
+        </label>
+      </div>
+    </li>
+  </ul>
+</div>
+<div class="adding">
+  <input type="text" placeholder="Text" [(ngModel)]="newText">
+  <button (click)="addNew()" class="add">
+    ADD
+  </button>
+  <p class="err" *ngIf="newText.length == 0">{{ newErr }}</p>
+  <button (click)="show()" class="show">show in console</button>
+</div>
+
+
+
+
+<router-outlet></router-outlet>
