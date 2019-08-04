@@ -3,4 +3,5 @@
 /first-lesson
 /Angular8
 /second-lesson/node_modules
-npm i
+package.json
+package-lock.json
